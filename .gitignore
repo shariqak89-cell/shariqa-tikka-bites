@@ -1,0 +1,4 @@
+data/submissions.jsonl
+*.log
+__pycache__/
+.env

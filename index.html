@@ -49,8 +49,8 @@
           <span class="eyebrow">Delhi-style fast food counter</span>
           <h1>Shariqa Tikka Bites</h1>
           <p>Pizza, burgers, tikka rolls, crispy fries, loaded wraps and cold shakes with a fresh, smoky, modern taste.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="menu.html"><i data-lucide="utensils"></i>See Menu</a><button class="btn btn-light" type="button" data-open-popup><i data-lucide="send"></i>Contact Now</button></div>
-          <div class="hero-stats" aria-label="Highlights"><span><strong>40+</strong> fast food items</span><span><strong>30 min</strong> quick order reply</span><span><strong>Fresh</strong> daily prep</span></div>
+          <div class="hero-actions"><a class="btn btn-primary" href="menu.html"><i data-lucide="utensils"></i>See Menu</a><a class="btn btn-whatsapp" href="https://wa.me/919643528235?text=Hi%20Shariqa%20Tikka%20Bites%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener"><i data-lucide="message-circle"></i>WhatsApp Order</a><button class="btn btn-light" type="button" data-open-popup><i data-lucide="send"></i>Contact Now</button></div>
+          <div class="hero-stats" aria-label="Highlights"><span><strong>Loaded</strong> fast food menu</span><span><strong>Quick</strong> order reply</span><span><strong>Fresh</strong> daily prep</span></div>
         </div>
         <div class="hero-visual reveal">
           <div class="hero-main-photo"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1100&q=85" alt="Fresh pizza with basil" /></div>
@@ -59,6 +59,34 @@
         </div>
       </section>
       <section class="ticker" aria-label="Popular food list"><div><span>Pizza</span><span>Burger</span><span>Chicken Tikka</span><span>Paneer Tikka</span><span>Fries</span><span>Wraps</span><span>Sandwich</span><span>Cold Coffee</span><span>Momos</span><span>Shakes</span></div></section>
+      <section class="section order-builder" aria-labelledby="builderTitle">
+        <div class="section-copy reveal">
+          <span class="eyebrow">Quick order builder</span>
+          <h2 id="builderTitle">Tap your craving, build your order.</h2>
+          <p>Pick items and the form will open with your order note ready.</p>
+        </div>
+        <div class="builder-panel reveal">
+          <div class="builder-items" aria-label="Quick order items">
+            <button type="button" data-builder-item="Loaded Pizza" data-builder-price="199"><i data-lucide="pizza"></i><span>Loaded Pizza</span><strong>Rs. 199</strong></button>
+            <button type="button" data-builder-item="Cheese Burger" data-builder-price="129"><i data-lucide="sandwich"></i><span>Cheese Burger</span><strong>Rs. 129</strong></button>
+            <button type="button" data-builder-item="Chicken Tikka" data-builder-price="179"><i data-lucide="flame"></i><span>Chicken Tikka</span><strong>Rs. 179</strong></button>
+            <button type="button" data-builder-item="Masala Fries" data-builder-price="89"><i data-lucide="bean"></i><span>Masala Fries</span><strong>Rs. 89</strong></button>
+          </div>
+          <div class="builder-summary">
+            <span class="eyebrow">Your combo</span>
+            <h3 id="builderSummary">No items selected yet</h3>
+            <p id="builderTotal">Total: Rs. 0</p>
+            <div class="builder-actions">
+              <button class="btn btn-primary" type="button" id="builderOrder"><i data-lucide="shopping-bag"></i>Order This</button>
+              <button class="btn btn-light" type="button" id="builderClear"><i data-lucide="rotate-ccw"></i>Clear</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="deal-strip reveal" aria-label="Deal generator">
+        <div><span class="eyebrow">Today's fun deal</span><h2 id="dealText">Burger + Fries combo with extra sauce.</h2></div>
+        <button class="btn btn-primary" type="button" id="dealButton"><i data-lucide="sparkles"></i>New Deal</button>
+      </section>
       <section class="section video-section home-video" id="home-video">
         <div class="section-copy reveal"><span class="eyebrow">Fresh in motion</span><h2>Food that feels ready before you order.</h2><p>This video sits on the Home page so visitors can immediately feel the fast-food energy without opening a separate video page.</p><button class="btn btn-primary" type="button" data-open-popup><i data-lucide="shopping-bag"></i>Start Order</button></div>
         <div class="video-frame reveal"><video controls muted loop playsinline poster="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=85"><source src="https://cdn.coverr.co/videos/user-ai-generation-xU0txiBpkCyI/1080p.mp4" type="video/mp4" /></video></div>
@@ -91,7 +119,7 @@
         <span class="eyebrow">Quick contact</span>
         <h2 id="popupTitle">Shariqa Tikka Bites se baat karein</h2>
         <p>Form submit karte hi details email par chali jayengi.</p>
-        <form class="contact-form" action="https://formsubmit.co/sharixa393@gmail.com" method="POST" target="_blank">
+        <form class="contact-form" data-contact-form action="https://formsubmit.co/sharixa393@gmail.com" method="POST" target="_blank">
           <input type="hidden" name="_subject" value="Popup inquiry from Shariqa Tikka Bites website" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
@@ -102,6 +130,7 @@
           <label>Delivery / pickup address<textarea name="customer_address" rows="3" placeholder="Your complete address or write pickup" required></textarea></label>
           <label>Extra requirement<textarea name="message" rows="3" placeholder="Spice, sauce, landmark or party details" required></textarea></label>
           <button class="btn btn-primary" type="submit"><i data-lucide="send"></i>Send Message</button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
         </form>
         <button class="quiet-btn" type="button" id="stopPopup">Do not show popup again</button>
       </aside>
@@ -116,8 +145,10 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="menu.html">Menu</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Food Gallery</a>
+        <a href="contact.html">Order Form</a>
+        <a href="tel:+919643528235">Call Now</a>
+        <a href="mailto:sharixa393@gmail.com">Email Us</a>
       </div>
       <div class="footer-contact">
         <h3>Contact</h3>
@@ -128,8 +159,8 @@
       <div class="footer-social">
         <h3>Social</h3>
         <div class="social-links">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i><span>Instagram</span></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i><span>Facebook</span></a>
         </div>
       </div>
     </footer>
