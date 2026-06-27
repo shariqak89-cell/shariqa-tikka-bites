@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Shariqa Tikka Bites</title>
+    <meta name="description" content="Menu for Shariqa Tikka Bites pizza, burger, tikka and fast food." />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://cdn.coverr.co" />
+    <link rel="icon" href="assets/shariqa-bites-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="menu">
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Shariqa Tikka Bites home">
+        <img src="assets/shariqa-bites-logo.png" alt="Shariqa Tikka Bites logo" />
+        <span><strong>Shariqa</strong><small>Tikka Bites</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="gallery.html" class="">Gallery</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+      <a class="call-pill" href="tel:+919643528235"><i data-lucide="phone"></i><span>9643528235</span></a>
+    </header>
+    <main>
+      <section class="page-hero"><span class="eyebrow">Menu</span><h1>Pizza, burger, tikka and quick bites.</h1><p>Choose your item, quantity and requirement from the order form. Party and catering orders can also be requested.</p></section>
+      <section class="section menu-section"><div class="menu-grid">
+          <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=700&q=85" alt="Classic burger" /><div><h3>Classic Cheese Burger</h3><p>Juicy patty, cheese, lettuce and house sauce.</p><strong>Rs. 129</strong></div></article>
+          <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=85" alt="Loaded pizza" /><div><h3>Loaded Pizza</h3><p>Melting cheese, herbs and fresh toppings.</p><strong>Rs. 199</strong></div></article>
+          <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=85" alt="Chicken tikka" /><div><h3>Chicken Tikka</h3><p>Char-grilled, smoky and spicy tikka bites.</p><strong>Rs. 179</strong></div></article>
+          <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4?auto=format&fit=crop&w=700&q=85" alt="Wrap roll" /><div><h3>Tikka Wrap / Roll</h3><p>Soft wrap loaded with tikka, salad and sauce.</p><strong>Rs. 149</strong></div></article>
+          <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=700&q=85" alt="French fries" /><div><h3>Masala Fries</h3><p>Crispy fries tossed in tangy spice mix.</p><strong>Rs. 89</strong></div></article>
+          <article class="menu-card reveal"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=700&q=85" alt="Creamy pasta" /><div><h3>Cheesy Pasta</h3><p>Rich sauce, herbs and soft pasta shells.</p><strong>Rs. 159</strong></div></article>
+        </div></section>
+    </main>
+    <button class="floating-contact" type="button" data-open-popup aria-label="Open contact form"><i data-lucide="message-circle"></i></button>
+    <button class="chatbot-launch" type="button" id="chatbotLaunch" aria-label="Open AI chatbot"><i data-lucide="bot"></i><span>AI</span></button>
+    <aside class="chatbot" id="chatbot" aria-hidden="true" aria-label="Shariqa AI chatbot">
+      <div class="chatbot-header">
+        <div><span class="eyebrow">Website AI</span><h2>Ask Shariqa Bot</h2></div>
+        <button type="button" id="closeChatbot" aria-label="Close chatbot"><i data-lucide="x"></i></button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <p class="bot-message">Hi! Main Shariqa Tikka Bites website ke basis par menu, order, address, phone aur contact form ke answers de sakta hoon.</p>
+      </div>
+      <div class="chatbot-suggestions" aria-label="Suggested questions">
+        <button type="button" data-chat-question="Address kya hai?">Address</button>
+        <button type="button" data-chat-question="Order kaise karun?">Order</button>
+        <button type="button" data-chat-question="Menu mein kya kya hai?">Menu</button>
+      </div>
+      <form class="chatbot-form" id="chatbotForm">
+        <input id="chatbotInput" type="text" placeholder="Ask about menu, order, address..." autocomplete="off" />
+        <button type="submit" aria-label="Send question"><i data-lucide="send"></i></button>
+      </form>
+    </aside>
+    <div class="popup" id="contactPopup" aria-hidden="true">
+      <div class="popup-backdrop" data-close-popup></div>
+      <aside class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+        <button class="popup-close" type="button" data-close-popup aria-label="Close popup"><i data-lucide="x"></i></button>
+        <span class="eyebrow">Quick contact</span>
+        <h2 id="popupTitle">Shariqa Tikka Bites se baat karein</h2>
+        <p>Form submit karte hi details email par chali jayengi.</p>
+        <form class="contact-form" action="https://formsubmit.co/sharixa393@gmail.com" method="POST" target="_blank">
+          <input type="hidden" name="_subject" value="Popup inquiry from Shariqa Tikka Bites website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <label>Name<input name="name" type="text" placeholder="Your name" required /></label>
+          <label>Phone<input name="phone" type="tel" placeholder="Your phone number" required /></label>
+          <label>Food item<select name="order_item" required><option value="">Select item</option><option>Pizza</option><option>Burger</option><option>Chicken Tikka</option><option>Paneer Tikka</option><option>Wrap / Roll</option><option>Fries</option><option>Sandwich</option><option>Cold Coffee / Shake</option><option>Party or catering order</option></select></label>
+          <div class="form-row"><label>Quantity<input name="quantity" type="number" min="1" value="1" required /></label><label>Needed by<input name="needed_by" type="datetime-local" /></label></div>
+          <label>Delivery / pickup address<textarea name="customer_address" rows="3" placeholder="Your complete address or write pickup" required></textarea></label>
+          <label>Extra requirement<textarea name="message" rows="3" placeholder="Spice, sauce, landmark or party details" required></textarea></label>
+          <button class="btn btn-primary" type="submit"><i data-lucide="send"></i>Send Message</button>
+        </form>
+        <button class="quiet-btn" type="button" id="stopPopup">Do not show popup again</button>
+      </aside>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="assets/shariqa-bites-logo.png" alt="Shariqa Tikka Bites logo" />
+        <div><strong>Shariqa Tikka Bites</strong><p>Pizza, burger, tikka and fast food.</p></div>
+      </div>
+      <div class="footer-links">
+        <h3>Quick links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <a href="tel:+919643528235"><i data-lucide="phone"></i>9643528235</a>
+        <a href="mailto:sharixa393@gmail.com"><i data-lucide="mail"></i>sharixa393@gmail.com</a>
+        <span><i data-lucide="map-pin"></i>1498, Gli Qasim Jaan, Ballimaran, Delhi-110006</span>
+      </div>
+      <div class="footer-social">
+        <h3>Social</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
