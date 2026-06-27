@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shariqa Tikka Bites | Pizza, Burger, Tikka & Fast Food</title>
+    <meta
+      name="description"
+      content="Shariqa Tikka Bites serves modern fast food, tikka rolls, pizza, burgers, fries, shakes and party snacks."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://cdn.coverr.co" />
+    <link rel="icon" href="assets/shariqa-bites-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="intro" id="intro" aria-label="Opening food preparation animation">
+      <button class="intro-skip" id="skipIntro" type="button" aria-label="Skip intro">
+        <i data-lucide="x"></i>
+        Skip
+      </button>
+      <div class="prep-loader" aria-hidden="true">
+        <div class="prep-ring"></div>
+        <div class="prep-icon prep-one">🍕</div>
+        <div class="prep-icon prep-two">🍔</div>
+        <div class="prep-icon prep-three">🔥</div>
+        <div class="prep-plate">
+          <i data-lucide="chef-hat"></i>
+        </div>
+      </div>
+      <div class="intro-center">
+        <img src="assets/shariqa-bites-logo.png" alt="Shariqa Bites logo" />
+        <p>Preparing your fresh order...</p>
+        <div class="intro-progress"><span></span></div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Shariqa Tikka Bites home">
+        <img src="assets/shariqa-bites-logo.png" alt="Shariqa Tikka Bites logo" />
+        <span>
+          <strong>Shariqa</strong>
+          <small>Tikka Bites</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu">
+        <i data-lucide="menu"></i>
+      </button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="call-pill" href="tel:+919643528235">
+        <i data-lucide="phone"></i>
+        9643528235
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Delhi-style fast food counter</span>
+          <h1>Shariqa Tikka Bites</h1>
+          <p>
+            Pizza, burgers, tikka rolls, crispy fries, loaded wraps and cold shakes
+            with a fresh, smoky, modern taste.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">
+              <i data-lucide="utensils"></i>
+              See Menu
+            </a>
+            <button class="btn btn-light" type="button" data-open-popup>
+              <i data-lucide="send"></i>
+              Contact Now
+            </button>
+          </div>
+          <div class="hero-stats" aria-label="Highlights">
+            <span><strong>40+</strong> fast food items</span>
+            <span><strong>30 min</strong> quick order reply</span>
+            <span><strong>Fresh</strong> daily prep</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-main-photo">
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1100&q=85"
+              alt="Fresh pizza with basil"
+            />
+          </div>
+          <div class="floating-card float-one">
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=85"
+              alt="Cheese burger"
+            />
+            <span>Smoky Burgers</span>
+          </div>
+          <div class="floating-card float-two">
+            <img
+              src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=500&q=85"
+              alt="Crispy fries and burger"
+            />
+            <span>Loaded Combos</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Popular food list">
+        <div>
+          <span>Pizza</span>
+          <span>Burger</span>
+          <span>Chicken Tikka</span>
+          <span>Paneer Tikka</span>
+          <span>Fries</span>
+          <span>Wraps</span>
+          <span>Sandwich</span>
+          <span>Cold Coffee</span>
+          <span>Momos</span>
+          <span>Shakes</span>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-copy reveal">
+          <span class="eyebrow">About us</span>
+          <h2>Street-food energy with a premium cafe feel.</h2>
+          <p>
+            Shariqa Tikka Bites is designed for people who want bold taste,
+            clean presentation and fast service. The website keeps the same mood:
+            warm, animated, image-rich and easy to contact from any screen.
+          </p>
+          <div class="feature-grid">
+            <article>
+              <i data-lucide="flame"></i>
+              <h3>Fresh Tikka</h3>
+              <p>Smoky rolls, grilled bites and spicy sauces.</p>
+            </article>
+            <article>
+              <i data-lucide="clock-3"></i>
+              <h3>Fast Replies</h3>
+              <p>Contact form and phone link are always easy to reach.</p>
+            </article>
+            <article>
+              <i data-lucide="sparkles"></i>
+              <h3>Modern Look</h3>
+              <p>Animated sections, polished images and popup contact flow.</p>
+            </article>
+          </div>
+        </div>
+        <div class="about-collage reveal">
+          <img
+            src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85"
+            alt="Burger with fries"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=900&q=85"
+            alt="Grilled tikka skewers"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85"
+            alt="Fast food burger meal"
+          />
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Menu highlights</span>
+          <h2>Fast food favorites</h2>
+          <p>Popular items shown with appetizing images and quick order actions.</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=700&q=85" alt="Classic burger" />
+            <div><h3>Classic Cheese Burger</h3><p>Juicy patty, cheese, lettuce and house sauce.</p><strong>Rs. 129</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=85" alt="Margherita pizza" />
+            <div><h3>Loaded Pizza</h3><p>Melting cheese, herbs and fresh toppings.</p><strong>Rs. 199</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=85" alt="Chicken tikka" />
+            <div><h3>Chicken Tikka</h3><p>Char-grilled, smoky and spicy tikka bites.</p><strong>Rs. 179</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=85" alt="Crispy samosa snack" />
+            <div><h3>Crispy Snacks</h3><p>Golden bites with chutney and masala.</p><strong>Rs. 79</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=700&q=85" alt="Creamy pasta" />
+            <div><h3>Cheesy Pasta</h3><p>Rich sauce, herbs and soft pasta shells.</p><strong>Rs. 159</strong></div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=700&q=85" alt="French fries" />
+            <div><h3>Masala Fries</h3><p>Crispy fries tossed in tangy spice mix.</p><strong>Rs. 89</strong></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Food gallery</span>
+          <h2>Lots of taste on screen</h2>
+        </div>
+        <div class="gallery">
+          <img class="reveal" src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=700&q=85" alt="Burger meal" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=700&q=85" alt="Pizza slice" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=700&q=85" alt="Grilled food plate" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=700&q=85" alt="Tacos and fast food" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=700&q=85" alt="Burger close up" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=700&q=85" alt="Grilled platter" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=85" alt="Dessert shake" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?auto=format&fit=crop&w=700&q=85" alt="Fast food table" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=700&q=85" alt="Cheese burger with fries" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85" alt="Burger stack" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=700&q=85" alt="French fries" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=85" alt="Chicken tikka skewers" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=85" alt="Crispy Indian snack" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=700&q=85" alt="Cheesy pasta" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=85" alt="Fast food burger plate" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=85" alt="Burger and fries combo" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=85" alt="Dessert slice" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=85" alt="Assorted food table" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=700&q=85" alt="Fresh food bowl" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=700&q=85" alt="Sweet pancakes" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=85" alt="Pizza close up" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?auto=format&fit=crop&w=700&q=85" alt="Pizza with toppings" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?auto=format&fit=crop&w=700&q=85" alt="Pizza board" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=700&q=85" alt="Loaded fries" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=85" alt="Chicken burger" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=700&q=85" alt="Burger and sauce" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4?auto=format&fit=crop&w=700&q=85" alt="Chicken wrap" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=85" alt="Spicy Indian curry" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1617692855027-33b14f061079?auto=format&fit=crop&w=700&q=85" alt="Tandoori platter" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?auto=format&fit=crop&w=700&q=85" alt="Grilled chicken food" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=700&q=85" alt="Noodles bowl" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=700&q=85" alt="Fried chicken" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?auto=format&fit=crop&w=700&q=85" alt="Sandwich meal" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=700&q=85" alt="Chicken meal" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=85" alt="Cold coffee drink" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=85" alt="Milkshake glass" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?auto=format&fit=crop&w=700&q=85" alt="Street food platter" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=700&q=85" alt="Fast food meal tray" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=85" alt="Cheeseburger close up" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=85" alt="Burger with sesame bun" />
+        </div>
+      </section>
+
+      <section class="section video-section" id="video">
+        <div class="section-copy reveal">
+          <span class="eyebrow">Video taste</span>
+          <h2>Watch the burger craft in motion.</h2>
+          <p>
+            A polished food video section adds life to the website and makes the
+            menu feel active, fresh and ready to order.
+          </p>
+          <a class="btn btn-primary" href="tel:+919643528235">
+            <i data-lucide="phone-call"></i>
+            Call 9643528235
+          </a>
+        </div>
+        <div class="video-frame reveal">
+          <video
+            controls
+            muted
+            loop
+            playsinline
+            poster="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=85"
+          >
+            <source src="https://cdn.coverr.co/videos/user-ai-generation-xU0txiBpkCyI/1080p.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-panel reveal">
+          <div>
+            <span class="eyebrow">Contact</span>
+            <h2>Order, booking or catering inquiry?</h2>
+            <p>
+              Fill the form and details will be sent to
+              <strong>sharixa393@gmail.com</strong>.
+            </p>
+          <div class="contact-lines">
+            <a href="tel:+919643528235"><i data-lucide="phone"></i> 9643528235</a>
+            <a href="mailto:sharixa393@gmail.com"><i data-lucide="mail"></i> sharixa393@gmail.com</a>
+          </div>
+          <address class="address-card">
+            <i data-lucide="map-pin"></i>
+            <span>1498, Gli Qasim Jaan, Ballimaran, Delhi-110006</span>
+          </address>
+        </div>
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/sharixa393@gmail.com"
+            method="POST"
+            target="_blank"
+          >
+            <input type="hidden" name="_subject" value="New inquiry from Shariqa Tikka Bites website" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <label>
+              Name
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              Phone
+              <input name="phone" type="tel" placeholder="Your phone number" required />
+            </label>
+            <label>
+              What do you want to order?
+              <select name="order_item" required>
+                <option value="">Select food item</option>
+                <option>Pizza</option>
+                <option>Burger</option>
+                <option>Chicken Tikka</option>
+                <option>Paneer Tikka</option>
+                <option>Wrap / Roll</option>
+                <option>Fries</option>
+                <option>Sandwich</option>
+                <option>Cold Coffee / Shake</option>
+                <option>Party or catering order</option>
+              </select>
+            </label>
+            <div class="form-row">
+              <label>
+                Quantity
+                <input name="quantity" type="number" min="1" value="1" required />
+              </label>
+              <label>
+                Needed by
+                <input name="needed_by" type="datetime-local" />
+              </label>
+            </div>
+            <label>
+              Delivery / pickup address
+              <textarea name="customer_address" rows="3" placeholder="Your complete address or write pickup" required></textarea>
+            </label>
+            <label>
+              Extra requirement
+              <textarea name="message" rows="4" placeholder="Spice level, sauces, landmark, party details, etc." required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">
+              <i data-lucide="send"></i>
+              Send to Email
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <button class="floating-contact" type="button" data-open-popup aria-label="Open contact form">
+      <i data-lucide="message-circle"></i>
+    </button>
+
+    <button class="chatbot-launch" type="button" id="chatbotLaunch" aria-label="Open AI chatbot">
+      <i data-lucide="bot"></i>
+      <span>AI</span>
+    </button>
+
+    <aside class="chatbot" id="chatbot" aria-hidden="true" aria-label="Shariqa AI chatbot">
+      <div class="chatbot-header">
+        <div>
+          <span class="eyebrow">Website AI</span>
+          <h2>Ask Shariqa Bot</h2>
+        </div>
+        <button type="button" id="closeChatbot" aria-label="Close chatbot">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <p class="bot-message">Hi! Main Shariqa Tikka Bites website ke basis par menu, order, address, phone aur contact form ke answers de sakta hoon.</p>
+      </div>
+      <div class="chatbot-suggestions" aria-label="Suggested questions">
+        <button type="button" data-chat-question="Address kya hai?">Address</button>
+        <button type="button" data-chat-question="Order kaise karun?">Order</button>
+        <button type="button" data-chat-question="Menu mein kya kya hai?">Menu</button>
+      </div>
+      <form class="chatbot-form" id="chatbotForm">
+        <input id="chatbotInput" type="text" placeholder="Ask about menu, order, address..." autocomplete="off" />
+        <button type="submit" aria-label="Send question">
+          <i data-lucide="send"></i>
+        </button>
+      </form>
+    </aside>
+
+    <div class="popup" id="contactPopup" aria-hidden="true">
+      <div class="popup-backdrop" data-close-popup></div>
+      <aside class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+        <button class="popup-close" type="button" data-close-popup aria-label="Close popup">
+          <i data-lucide="x"></i>
+        </button>
+        <span class="eyebrow">Quick contact</span>
+        <h2 id="popupTitle">Shariqa Tikka Bites se baat karein</h2>
+        <p>Form submit karte hi details email par chali jayengi.</p>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/sharixa393@gmail.com"
+          method="POST"
+          target="_blank"
+        >
+          <input type="hidden" name="_subject" value="Popup inquiry from Shariqa Tikka Bites website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <label>
+            Name
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Phone
+            <input name="phone" type="tel" placeholder="Your phone number" required />
+          </label>
+          <label>
+            Food item
+            <select name="order_item" required>
+              <option value="">Select item</option>
+              <option>Pizza</option>
+              <option>Burger</option>
+              <option>Chicken Tikka</option>
+              <option>Paneer Tikka</option>
+              <option>Wrap / Roll</option>
+              <option>Fries</option>
+              <option>Sandwich</option>
+              <option>Cold Coffee / Shake</option>
+              <option>Party or catering order</option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>
+              Quantity
+              <input name="quantity" type="number" min="1" value="1" required />
+            </label>
+            <label>
+              Needed by
+              <input name="needed_by" type="datetime-local" />
+            </label>
+          </div>
+          <label>
+            Delivery / pickup address
+            <textarea name="customer_address" rows="3" placeholder="Your complete address or write pickup" required></textarea>
+          </label>
+          <label>
+            Extra requirement
+            <textarea name="message" rows="3" placeholder="Spice, sauce, landmark or party details" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">
+            <i data-lucide="send"></i>
+            Send Message
+          </button>
+        </form>
+        <button class="quiet-btn" type="button" id="stopPopup">Do not show popup again</button>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <img src="assets/shariqa-bites-logo.png" alt="Shariqa Tikka Bites logo" />
+      <p>Shariqa Tikka Bites. Pizza, burger, tikka and fast food.</p>
+      <a href="tel:+919643528235">Call 9643528235</a>
+    </footer>
+  </body>
+</html>
