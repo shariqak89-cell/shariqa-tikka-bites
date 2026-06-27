@@ -92,9 +92,22 @@ function startPopupLoop() {
   popupTimer = window.setInterval(openPopup, 30000);
 }
 
-document.body.classList.add("no-scroll");
-window.setTimeout(hideIntro, 2800);
-skipIntro?.addEventListener("click", hideIntro);
+if (intro) {
+  document.body.classList.add("no-scroll");
+  window.setTimeout(hideIntro, 2800);
+  skipIntro?.addEventListener("click", hideIntro);
+}
+
+const activePage = document.body.dataset.page;
+if (activePage) {
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    const isActive =
+      (activePage === "home" && href.includes("index.html")) ||
+      href.includes(`${activePage}.html`);
+    link.classList.toggle("active", isActive);
+  });
+}
 
 navToggle?.addEventListener("click", () => {
   navLinks?.classList.toggle("open");
